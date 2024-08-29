@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+     font-family: 'Poppins', sans-serif;
+}
+:root{
+ --verde-escuro: #14424b;
+ --verde: #2f9364;
+ --orange: #ff7c47;
+ --degrade-btn: linear-gradient(#11eefe, #796aff);
+ --color-p: #a1a1a1;
+ --color-p-2: #868585;
+
+}
+.background-verde{
+    background-color: var(--verde-escuro);
+}
+.btn-gradiente{
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-image: var(--degrade-btn);
+}
+/* classes reutilizavéis */
+.container{
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+/* classes do site */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo{
+    margin-top: 30px;
+}
+
+.logo a{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+
+}
+.ul{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.ul li{
+    margin: 0 35px;
+    font-size: 15px;
+   
+}
+.ul li a{
+color: white;
+}
+/*main*/
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.main-text{
+    width:50%;
+    color: white;
+}
+.main-text h1{
+    font-size: 4.5rem;
+}
+.main-text div{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.main-img{
+    width: 50%;
+}
+.main-img img{
+    width: 100%;
+}
+/* menu icon */
+.menu-icon{
+    display: none;
+   position: relative;
+   z-index: 10;
+}
+
+/* responsivo */
+@media (max-width: 960px){
+    .menu-icon{
+        display: block;
+       
+    }
+    .ul{
+        position: fixed;
+        background-color: var(--verde-escuro);
+        top: 0;
+        width:100%;
+        height: 100%;
+        left: 100%;
+        transition: 0.3s;
+        flex-direction: column;
+        justify-content: center;
+    }
+.ul li{
+    font-size: 20px;
+    margin: 20px 0;
+
+}
+    .ul.ativo{
+        left:0;
+    }
+}
+
+
+
+
