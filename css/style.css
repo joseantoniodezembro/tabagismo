@@ -122,6 +122,24 @@ main .container{
         left:0;
     }
 }
+/* informacao */
+.informacao{
+    width:100%;
+    color: rgb(0, 0, 0);
+}
+.informacao h1{
+
+}
+.informacao h2{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.informacao div{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
 
 
 
